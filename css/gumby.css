@@ -1687,15 +1687,18 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 body { background-image: url(../img/bg-large.png); background-repeat: no-repeat; background-position: center top; background-color: #f2f2f2; }
 
-h1 { color: #389dec; font-family: "Mohave", "sans-serif"; }
+h1 { color: #00cbe9; font-family: "Mohave", "sans-serif"; }
+
+.navbar { width: 70%; margin: 0 auto; }
 
 .center { text-align: center; }
 
-.section1 .left { height: 300px; }
-.section1 .left .name { padding-top: 100px; }
+.section1 .left { height: 250px; }
+.section1 .left .name { padding-top: 60px; }
 .section1 .left .name h2 { font-family: "Mohave", "sans-serif"; color: #e2e2e2; font-weight: 600; letter-spacing: 0.03em; }
-.section1 .right { height: 300px; border-left: solid 1.5px #389dec; margin-left: 0; }
-.section1 .right .list { width: 300px; margin: 0 auto; padding-top: 100px; }
+.section1 .right { height: 250px; border-left: solid 1.5px #389dec; margin-left: 0; }
+.section1 .right .list { width: 300px; margin: 0 auto; padding-top: 60px; }
 .section1 .right ul li { margin-top: 20px; color: #e2e2e2; font-weight: 400; font-size: 1.2em; }
 .section1 .adventure { background: rgba(136, 136, 136, 0.59); }
 .section1 .adventure h1 { font-family: "Roboto Slab", serif; font-size: 6em; font-weight: 600; letter-spacing: 0.03em; }
+.section1 .description p { color: #e2e2e2; line-height: 1em; font-size: 1em; width: 40%; margin: 0 auto; }

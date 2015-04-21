@@ -5,9 +5,15 @@ body {
     background-position: center top;
     background-color: #f2f2f2;
 }
+
 h1 {
-    color:#389dec;
+    color:#00cbe9;
     font-family: "Mohave", "sans-serif";
+}
+
+.navbar {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .center {
@@ -17,10 +23,10 @@ h1 {
 .section1 {
 
     .left {
-        height: 300px;
+        height: 250px;
 
         .name {
-            padding-top: 100px;
+            padding-top: 60px;
 
             h2 {
                 font-family: "Mohave", "sans-serif";
@@ -32,14 +38,14 @@ h1 {
     }
 
     .right {
-        height: 300px;
+        height: 250px;
         border-left: solid 1.5px #389dec;
         margin-left: 0;
 
         .list {
             width: 300px;
             margin: 0 auto;
-            padding-top: 100px;
+            padding-top: 60px;
         }
 
         ul li {
@@ -59,5 +65,22 @@ h1 {
         font-weight: 600;
         letter-spacing: 0.03em;
        }
+    }
+
+    .description {
+        p {
+            color: #e2e2e2;
+            line-height: 1em;
+            font-size: 1em;
+            width: 40%;
+            margin: 0 auto;
+        }
+        .text-left {
+            //width: 40%;
+        }
+
+        .text-right {
+            //width: 40%;
+        }
     }
 }
