@@ -1,0 +1,63 @@
+// Your custom SCSS should be written here...
+body {
+    background-image: url(../img/bg-large.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #f2f2f2;
+}
+h1 {
+    color:#389dec;
+    font-family: "Mohave", "sans-serif";
+}
+
+.center {
+    text-align: center;
+}
+
+.section1 {
+
+    .left {
+        height: 300px;
+
+        .name {
+            padding-top: 100px;
+
+            h2 {
+                font-family: "Mohave", "sans-serif";
+                color: #e2e2e2;
+                font-weight: 600;
+                letter-spacing: 0.03em;
+            }
+        }
+    }
+
+    .right {
+        height: 300px;
+        border-left: solid 1.5px #389dec;
+        margin-left: 0;
+
+        .list {
+            width: 300px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+
+        ul li {
+            margin-top:20px;
+            color: #e2e2e2;
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+    }
+
+    .adventure {
+       background: rgba(136, 136, 136, 0.59);
+
+       h1 {
+        font-family: "Roboto Slab", serif;
+        font-size: 6em;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+       }
+    }
+}
