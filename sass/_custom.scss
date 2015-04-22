@@ -78,6 +78,10 @@ ul li {
             height: 200px;
         }
 
+        @include respond (all-phones) {
+            height: 60px;
+        }
+
         .name {
             padding-top: 60px;
 
@@ -86,6 +90,10 @@ ul li {
                 color: #e2e2e2;
                 font-weight: 600;
                 letter-spacing: 0.03em;
+
+                @include respond(all-phones) {
+                    font-size: 2.5em;
+                }
             }
         }
     }
@@ -97,6 +105,10 @@ ul li {
 
         @include respond ("max-width:1300px"){
             height: 200px;
+        }
+
+        @include respond (all-phones){
+            border-left:none;
         }
 
         .list {
@@ -130,6 +142,10 @@ ul li {
         @include respond ("max-width:1300px"){
             font-size: 6em;
             }
+
+        @include respond (all-phones){
+            font-size: 4em;
+            }
        }
     }
 
@@ -150,6 +166,12 @@ ul li {
                 padding-top: 10px;
                 padding-left: 40px;
             }
+
+
+            @include respond("max-width:1300px") {
+                padding-top: 10px;
+                padding-left: 30px;
+            }
         }
 
         .desc-right {
@@ -162,6 +184,8 @@ ul li {
             @include respond("max-width:1300px") {
                 padding-top: 10px;
                 padding-left: 30px;
+                height: 0;
+                border-left: none
             }
         }
     }
@@ -225,6 +249,14 @@ ul li {
         margin-bottom: 100px;
     }
 
+    .jax-pic {
+        text-align: right;
+
+        @include respond(all-phones) {
+            text-align: center;
+        }
+    }
+
     .jax {
 
 
@@ -256,12 +288,16 @@ ul li {
 /* --- Container configuration ---------------------------------------------------------- */
 .viewport {
     border: 3px solid #eee;
-    float: left;
+    //float: left;
     height: 399px;
     margin: 0 9px 9px 0;
     overflow: hidden;
     position: relative;
     width: 450px;
+
+    @include respond(all-phones) {
+        margin: 0 auto;
+    }
 }
 
 .viewport1 {
