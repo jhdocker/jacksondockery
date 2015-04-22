@@ -11,7 +11,7 @@ body {
 }
 
 h1, h2, h3, p{
-    
+
     font-family: $font-family;
 }
 
@@ -82,7 +82,7 @@ ul li {
             padding-top: 60px;
 
             h2 {
-               
+
                 color: #e2e2e2;
                 font-weight: 600;
                 letter-spacing: 0.03em;
@@ -178,7 +178,7 @@ ul li {
             letter-spacing: 0.03em;
             padding: 10px;
 
-           
+
         }
     }
 }
@@ -213,7 +213,7 @@ ul li {
             margin-top: 20px;
         }
 
-        
+
     }
 }
 
@@ -253,12 +253,96 @@ ul li {
     }
 }
 
+/* --- Container configuration ---------------------------------------------------------- */
+.viewport {
+    border: 3px solid #eee;
+    float: left;
+    height: 399px;
+    margin: 0 9px 9px 0;
+    overflow: hidden;
+    position: relative;
+    width: 450px;
+}
+
+.viewport1 {
+    background-image: url(../img/viewport-bg1.png);
+}
+
+.viewport2 {
+    background-image: url(../img/viewport-bg2.png);
+}
+
+.viewport3 {
+    background-image: url(../img/viewport-bg3.png);
+}
+
+.viewport4 {
+    background-image: url(../img/viewport-bg4.png);
+}
+
+/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
+   class to the last thumbnail in each row to get rid of the margin-right. */
+.no-margin {
+    margin-right: 0;
+}
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.viewport a {
+    display: block;
+    position: relative;
+}
+
+.viewport a img {
+    height: 332px;
+    left: -20px;
+    position: relative;
+    top: -20px;
+    width: 500px;
+}
+
+/* --- Label configuration -------------------------------------------------------------- */
+.viewport a span {
+    display: none;
+    font-size: 3.0em;
+    font-weight: bold;
+    height: 100%;
+    padding-top: 120px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+}
+    .viewport a span em {
+        display: block;
+        font-size: 0.45em;
+        font-weight: normal;
+        padding-top:20px;
+    }
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background {
+    background-color: rgba(15, 15, 15, 0.6);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+    .dark-background em {
+        color: #ccc;
+    }
+
+
 .section4 {
     margin-top: 100px;
 
     .contact-form {
         width: 500px;
         margin: 0 auto;
+
+        @include respond("max-width:1300px") {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
 
         input {
             margin-top:20px;
@@ -302,4 +386,12 @@ ul li {
 
 footer  {
     margin-top: 100px;
+}
+
+#topcontrol {
+    position: fixed;
+    bottom: 45px !important;
+    right: 5px;
+    opacity: 1;
+    cursor: pointer;
 }

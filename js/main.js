@@ -21,3 +21,24 @@ Gumby.ready(function() {
 }).touch(function() {
 	Gumby.log("This is a touch enabled device...");
 });
+
+
+$(document).ready(function() {
+    $('.viewport').mouseenter(function(e) {
+        $(this).children('a').children('img').animate({ height: '399', left: '0', top: '0', width: '450'}, 100);
+        $(this).children('a').children('span').fadeIn(200);
+    }).mouseleave(function(e) {
+        $(this).children('a').children('img').animate({ height: '332', left: '-20', top: '-20', width: '500'}, 100);
+        $(this).children('a').children('span').fadeOut(200);
+    });
+});
+
+//close modal on outside click
+$('.modal').on(Gumby.click, function(e){
+	var container = $('.content');
+	if ((!container.is(e.target)//if the target isn't in the container
+		&& container.has(e.target).length ===0)) //nor a descendant
+	{
+		$('.modal .close').trigger('gumby.trigger');
+	}
+});
