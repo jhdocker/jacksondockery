@@ -1,13 +1,13 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
-    $from = 'From: Jacksondockery.com';
-    $to = 'jhdocker@gmail.com';
-    $subject = 'web portfolio inquiry';
+    //$name = $_POST['name'];
+    //$email = $_POST['email'];
+    //$phone = $_POST['phone'];
+    //$message = $_POST['message'];
+    //$from = 'From: Jacksondockery.com';
+    //$to = 'jhdocker@gmail.com';
+    //$subject = 'web portfolio inquiry';
 
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+    //$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
 
 
@@ -33,13 +33,13 @@ $mail->Password = 'WebDev32';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->From = 'from@example.com';
+$mail->From = 'testing@jackson.com';
 $mail->FromName = 'Mailer';
 $mail->addAddress('jhdocker@gmail.com', 'Joe User');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
-$mail->addReplyTo('info@example.com', 'Information');
-$mail->addCC('cc@example.com');
-$mail->addBCC('bcc@example.com');
+//$mail->addReplyTo('info@example.com', 'Information');
+//$mail->addCC('cc@example.com');
+//$mail->addBCC('bcc@example.com');
 
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
