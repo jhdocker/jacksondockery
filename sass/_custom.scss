@@ -175,7 +175,7 @@ ul li {
             padding-top: 40px;
 
             @include respond("max-width:1300px") {
-                padding-top: 10px;
+
                 padding-left: 40px;
             }
 
@@ -308,7 +308,7 @@ ul li {
     border: 3px solid #eee;
     //float: left;
     height: 399px;
-    margin: 0 9px 9px 0;
+    margin: 20px 9px 9px 0;
     overflow: hidden;
     position: relative;
     width: 450px;
