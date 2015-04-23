@@ -42,3 +42,15 @@ $('.modal').on(Gumby.click, function(e){
 		$('.modal .close').trigger('gumby.trigger');
 	}
 });
+
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 200) {
+                $('#main-menu').fadeIn(500);
+            } else {
+                $('#main-menu').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);

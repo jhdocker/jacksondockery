@@ -42,17 +42,30 @@
 <body>
 	<!--lets set up that navbar-->
 	<div class="navbar" id="nav1">
-		<div class="row">
+		<div class="row" >
 			<a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><img src="img/menu.png"></a>
 			<ul class="ten columns centered">
-				<li><a href="#">Home</a></li>
+				<li><a href="#" >Home</a></li>
 				<li class='left skiplink'><a href="#" gumby-goto="[data-target='portfolio-section']" gumby-duration="600">Portfolio</a></li>
 				<li class='left skiplink'><a href="#" gumby-goto="[data-target='about-section']" gumby-duration="600">About Me</a></li>
 				<li class='left skiplink'><a href="#" class="switch" gumby-trigger="#modal1" gumby-goto="[data-target='contact-section']" gumby-duration="600">Contact</a></li>
 			</ul>
 		</div>
+
 	</div>
-	<section class='section1'>
+	<div class="navbar" id="main-menu">
+		<div class="row" >
+			<a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><img src="img/menu.png"></a>
+			<ul class="ten columns centered">
+				<li class='skiplink'><a href="#" gumby-goto="[data-target='home-section']" gumby-duration="600">Home</a></li>
+				<li class='left skiplink'><a href="#" gumby-goto="[data-target='portfolio-section']" gumby-duration="600">Portfolio</a></li>
+				<li class='left skiplink'><a href="#" gumby-goto="[data-target='about-section']" gumby-duration="600">About Me</a></li>
+				<li class='left skiplink'><a href="#" class="switch" gumby-trigger="#modal1" gumby-goto="[data-target='contact-section']" gumby-duration="600">Contact</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<section class='section1' data-target='home-section'>
 		<div class="row">
 			<div class="six columns left">
 				<div class='name center'><h2>Jackson Dockery</h2></div>
