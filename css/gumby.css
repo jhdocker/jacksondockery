@@ -1687,12 +1687,13 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 body { background-image: url(../img/bg-slant-lg.png); background-repeat: no-repeat; background-position: center top; background-color: #f2f2f2; }
 @media only screen and (max-width: 1300px) { body { background-image: url(../img/bg-slant-med.png); } }
+@media only screen and (max-width: 390px) { body { background-image: url(../img/bg-slant-sm.png); overflow-x: hidden; } }
 
 h1, h2, h3, p { font-family: "lato", sans-serif; }
 
 ul li { font-family: "lato", sans-serif; }
 
-.navbar { width: 50%; margin: 0 auto; margin-top: 60px; }
+.navbar { width: 50%; margin: 0 auto; margin-top: 40px; }
 @media only screen and (max-width: 1300px) { .navbar { width: 70%; margin-top: 20px; } }
 .navbar .skiplink { background-color: #0d76ff; }
 .navbar ul li a { text-shadow: none; font-family: "mohave", sans-serif; font-size: 1.4em; font-weight: 900; letter-spacing: 0.05em; }
@@ -1703,24 +1704,26 @@ ul li { font-family: "lato", sans-serif; }
 
 .center { text-align: center; }
 
-.section1 { margin-top: 100px; }
+.section1 { margin-top: 60px; }
 @media only screen and (max-width: 1300px) { .section1 { margin-top: 0; } }
 .section1 .left { height: 250px; }
 @media only screen and (max-width: 1300px) { .section1 .left { height: 200px; } }
 @media only screen and (max-width: 767px) { .section1 .left { height: 60px; } }
 .section1 .left .name { padding-top: 60px; }
+@media only screen and (max-width: 767px) { .section1 .left .name { padding-top: 20px; } }
 .section1 .left .name h2 { color: #e2e2e2; font-weight: 600; letter-spacing: 0.03em; }
-@media only screen and (max-width: 767px) { .section1 .left .name h2 { font-size: 2.5em; } }
+@media only screen and (max-width: 767px) { .section1 .left .name h2 { font-size: 1.7em; } }
 .section1 .right { height: 250px; border-left: solid 2px #00cbe9; margin-left: 0; }
 @media only screen and (max-width: 1300px) { .section1 .right { height: 200px; } }
-@media only screen and (max-width: 767px) { .section1 .right { border-left: none; } }
+@media only screen and (max-width: 767px) { .section1 .right { border-left: none; height: 160px; } }
 .section1 .right .list { width: 300px; margin: 0 auto; padding-top: 60px; }
+@media only screen and (max-width: 767px) { .section1 .right .list { padding-top: 30px; padding-left: 30px; } }
 .section1 .right ul li { margin-top: 20px; color: #e2e2e2; font-weight: 400; font-size: 1.2em; }
 @media only screen and (max-width: 1300px) { .section1 .right ul li { margin-top: 0; } }
 .section1 .adventure { background: rgba(136, 136, 136, 0.59); }
 .section1 .adventure h1 { font-size: 8.5em; font-weight: 800; color: #00cbe9; letter-spacing: 0.03em; padding: 10px; }
 @media only screen and (max-width: 1300px) { .section1 .adventure h1 { font-size: 6em; } }
-@media only screen and (max-width: 767px) { .section1 .adventure h1 { font-size: 4em; } }
+@media only screen and (max-width: 767px) { .section1 .adventure h1 { font-size: 2em; } }
 .section1 .description { min-height: 200px; }
 .section1 .description p { color: #e2e2e2; line-height: 1.2em; font-size: 1em; margin: 0 auto; }
 .section1 .description .desc-left { padding-top: 40px; }
@@ -1729,7 +1732,9 @@ ul li { font-family: "lato", sans-serif; }
 .section1 .description .desc-right { border-left: solid 2px #00cbe9; margin-left: 0; padding-left: 30px; padding-top: 40px; height: 200px; }
 @media only screen and (max-width: 767px) { .section1 .description .desc-right { padding-top: 10px; padding-left: 30px; height: 0; border-left: none; } }
 .section1 .slogan-end { border-top: solid 2px #00cbe9; padding-top: 20px; }
+@media only screen and (max-width: 767px) { .section1 .slogan-end { margin-top: 180px; } }
 .section1 .slogan-end h2 { background: rgba(136, 136, 136, 0.59); font-size: 2em; font-weight: 600; color: #00cbe9; letter-spacing: 0.03em; padding: 10px; }
+@media only screen and (max-width: 767px) { .section1 .slogan-end h2 { font-size: 1.5em; } }
 
 .section2 { margin-top: 300px; }
 @media only screen and (max-width: 1300px) { .section2 { margin-top: 100px; } }
@@ -1749,7 +1754,7 @@ ul li { font-family: "lato", sans-serif; }
 
 /* --- Container configuration ---------------------------------------------------------- */
 .viewport { border: 3px solid #eee; height: 399px; margin: 0 9px 9px 0; overflow: hidden; position: relative; width: 450px; }
-@media only screen and (max-width: 767px) { .viewport { margin: 0 auto; } }
+@media only screen and (max-width: 767px) { .viewport { margin: 0 auto; height: 300px; width: 300px; margin-top: 10px; } }
 
 .viewport1 { background-image: url(../img/viewport-bg1.png); }
 
