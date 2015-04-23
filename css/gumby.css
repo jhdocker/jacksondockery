@@ -1704,6 +1704,7 @@ ul li { font-family: "lato", sans-serif; }
 
 .modal .content { width: 60%; }
 @media only screen and (max-width: 1300px) { .modal .content { width: 80%; max-height: 85%; top: 10%; } }
+@media only screen and (max-width: 767px) { .modal .content { overflow-x: hidden; } }
 
 .center { text-align: center; }
 
@@ -1788,8 +1789,11 @@ ul li { font-family: "lato", sans-serif; }
 .section4 { margin-top: 100px; }
 .section4 .contact-form { width: 500px; margin: 0 auto; }
 @media only screen and (max-width: 1300px) { .section4 .contact-form h1 { font-size: 2.5em; } }
+@media only screen and (max-width: 767px) { .section4 .contact-form h1 { font-size: 2em; text-align: left; } }
 .section4 .contact-form input { margin-top: 20px; width: 400px; height: 40px; }
+@media only screen and (max-width: 767px) { .section4 .contact-form input { width: 200px; display: inherit; } }
 .section4 .contact-form textarea { margin-top: 20px; width: 400px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; outline: none; resize: none; }
+@media only screen and (max-width: 767px) { .section4 .contact-form textarea { width: 200px; display: inherit; } }
 .section4 .contact-form .btn { width: 200px; height: 60px; padding: 16px 20px; font-family: mohave; letter-spacing: 0.06em; font-size: 1.2em; background-color: #fff; color: #454545; border: solid thin #454545; }
 .section4 .contact-form .btn:hover { background: #454545; color: #f2f2f2; -webkit-transition: background-color 300ms ease; -moz-transition: background-color 300ms ease; -o-transition: background-color 300ms ease; transition: background-color 300ms ease; }
 
