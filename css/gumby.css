@@ -1755,6 +1755,9 @@ ul li { font-family: "lato", sans-serif; }
 @media only screen and (max-width: 767px) { .section3 .jax-pic { text-align: center; } }
 .section3 .jax .btn a { margin-top: 40px; width: 200px; height: 60px; padding: 16px 20px; font-family: mohave; letter-spacing: 0.06em; font-size: 1.2em; background-color: #f2f2f2; color: #454545; border: solid thin #454545; }
 .section3 .jax .btn a:hover { background: #454545; color: #f2f2f2; -webkit-transition: background-color 300ms ease; -moz-transition: background-color 300ms ease; -o-transition: background-color 300ms ease; transition: background-color 300ms ease; }
+.section3 .jax .contact-info { margin-top: 20px; }
+.section3 .jax .contact-info h4 { margin-bottom: 10px; }
+.section3 .jax .contact-info p { margin-bottom: 0; }
 
 /* --- Container configuration ---------------------------------------------------------- */
 .viewport { border: 3px solid #eee; height: 399px; margin: 20px 9px 9px 0; overflow: hidden; position: relative; width: 450px; }
