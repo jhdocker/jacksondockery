@@ -1,12 +1,12 @@
 // Your custom SCSS should be written here...
 body {
-    background-image: url(../img/bg-large.png);
+    background-image: url(../img/bg-slant-lg.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-color: #f2f2f2;
 
     @include respond("max-width: 1300px") {
-        background-image: url(../img/bg-med.png);
+        background-image: url(../img/bg-slant-med.png);
     }
 }
 
@@ -168,7 +168,7 @@ ul li {
             }
 
 
-            @include respond("max-width:1300px") {
+            @include respond(all-phones) {
                 padding-top: 10px;
                 padding-left: 30px;
             }
@@ -181,7 +181,7 @@ ul li {
             padding-top: 40px;
             height: 200px;
 
-            @include respond("max-width:1300px") {
+            @include respond(all-phones) {
                 padding-top: 10px;
                 padding-left: 30px;
                 height: 0;

@@ -1685,8 +1685,8 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
-body { background-image: url(../img/bg-large.png); background-repeat: no-repeat; background-position: center top; background-color: #f2f2f2; }
-@media only screen and (max-width: 1300px) { body { background-image: url(../img/bg-med.png); } }
+body { background-image: url(../img/bg-slant-lg.png); background-repeat: no-repeat; background-position: center top; background-color: #f2f2f2; }
+@media only screen and (max-width: 1300px) { body { background-image: url(../img/bg-slant-med.png); } }
 
 h1, h2, h3, p { font-family: "lato", sans-serif; }
 
@@ -1725,9 +1725,9 @@ ul li { font-family: "lato", sans-serif; }
 .section1 .description p { color: #e2e2e2; line-height: 1.2em; font-size: 1em; margin: 0 auto; }
 .section1 .description .desc-left { padding-top: 40px; }
 @media only screen and (max-width: 1300px) { .section1 .description .desc-left { padding-top: 10px; padding-left: 40px; } }
-@media only screen and (max-width: 1300px) { .section1 .description .desc-left { padding-top: 10px; padding-left: 30px; } }
+@media only screen and (max-width: 767px) { .section1 .description .desc-left { padding-top: 10px; padding-left: 30px; } }
 .section1 .description .desc-right { border-left: solid 2px #00cbe9; margin-left: 0; padding-left: 30px; padding-top: 40px; height: 200px; }
-@media only screen and (max-width: 1300px) { .section1 .description .desc-right { padding-top: 10px; padding-left: 30px; height: 0; border-left: none; } }
+@media only screen and (max-width: 767px) { .section1 .description .desc-right { padding-top: 10px; padding-left: 30px; height: 0; border-left: none; } }
 .section1 .slogan-end { border-top: solid 2px #00cbe9; padding-top: 20px; }
 .section1 .slogan-end h2 { background: rgba(136, 136, 136, 0.59); font-size: 2em; font-weight: 600; color: #00cbe9; letter-spacing: 0.03em; padding: 10px; }
 
