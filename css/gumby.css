@@ -1731,7 +1731,6 @@ ul li { font-family: "lato", sans-serif; }
 .section1 .description { min-height: 200px; }
 .section1 .description p { color: #e2e2e2; line-height: 1.2em; font-size: 1em; margin: 0 auto; }
 .section1 .description .desc-left { padding-top: 40px; }
-@media only screen and (max-width: 1300px) { .section1 .description .desc-left { padding-left: 40px; } }
 @media only screen and (max-width: 767px) { .section1 .description .desc-left { padding-top: 10px; padding-left: 30px; } }
 .section1 .description .desc-right { border-left: solid 2px #00cbe9; margin-left: 0; padding-left: 30px; padding-top: 40px; height: 200px; }
 @media only screen and (max-width: 767px) { .section1 .description .desc-right { padding-top: 10px; padding-left: 30px; height: 0; border-left: none; } }

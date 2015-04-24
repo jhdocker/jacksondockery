@@ -169,17 +169,15 @@
 		<div class="row">
 			<div class="six columns jax-pic">
 				<img src="img/jackson.jpg">
+				<p>336-554-2792</p>
+				<p>jhdocker [at] gmail.com</p>
 			</div>
 			<div class="six columns jax">
 				<p>Hi! I'm Jackson. I have a beautiful wife named Sara and three wild dogs. I love to run, scuba dive, ride my bike in the dirt and raise a pint with friends. A healthy work/play balance keeps me sane!</p>
 				<p>I'm a front-end developer with 1.5 years experience in the field. I am an eager learner and dedicated to a career in this field. I excel in a learning and supportive environment, while maintaining deadlines and company goals. I prefer to work in a team environment as I bring enthusiasm and willingness to work, but I can also work remotely and on an individual basis.</p>
 				<div class='contact-info'>
-					<h4>Let's Talk</h4>
-					<p>336-554-2792</p>
-					<p>jhdocker [at] gmail.com</p>
+					<p class="btn "><a href="#" class="switch" gumby-trigger="#modal1">Let's Talk!</a></p>
 				</div>
-
-					<!--<p class="btn "><a href="#" class="switch" gumby-trigger="#modal1">Let's Talk!</a></p>-->
 			</div>
 		</div>
 	</section>
@@ -187,6 +185,11 @@
 		<div class="row">
 			<div class="twelve columns">
 
+			</div>
+		</div>
+
+		<div class="row"><!--start of modal-->
+			<div class="twelve columns">
 				<div class="contact-form">
 						<div class="modal" id="modal1">
 						  <div class="content">
@@ -195,13 +198,11 @@
 						      <div class="ten columns centered text-center">
 						        <div class="contact-form">
 									<h1>Contact me!</h1>
-									<form method='post' action="form.php">
+									<form method='post' action="contact.php">
 
 									    <input name="name" placeholder="name"required>
 
-									    <input name="email" type="email" placeholder="email address"required>
-
-									    <input name="phone" placeholder="phone number (optional)">
+									    <input name="email" type="email" placeholder="your email address"required>
 
 									    <textarea name="message" placeholder="Start a conversation"></textarea>
 

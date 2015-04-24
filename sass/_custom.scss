@@ -198,12 +198,6 @@ ul li {
         .desc-left{
             padding-top: 40px;
 
-            @include respond("max-width:1300px") {
-
-                padding-left: 40px;
-            }
-
-
             @include respond(all-phones) {
                 padding-top: 10px;
                 padding-left: 30px;
