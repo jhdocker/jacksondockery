@@ -1,15 +1,17 @@
 // Your custom SCSS should be written here...
 body {
-    background-image: url(../img/bg-slant-lg.png);
+    background-image: url(../img/ocean-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-size: cover;
+    width:100%;
+    //background-position: center top;
     background-color: #f2f2f2;
 
     @include respond("max-width: 1300px") {
-        background-image: url(../img/bg-slant-med.png);
+        //background-image: url(../img/bg-slant-med.png);
     }
     @include respond("max-width:390px") {
-        background-image: url(../img/bg-slant-sm.png);
+        //background-image: url(../img/bg-slant-sm.png);
         overflow-x: hidden;
     }
 }
@@ -42,7 +44,7 @@ ul li {
 
 .navbar {
 
-    width: 50%;
+   // width: 50%;
     margin: 0 auto;
     margin-top: 40px;
 
@@ -51,21 +53,44 @@ ul li {
         margin-top: 20px;
     }
 
+    .row {
+        max-width: 1800px;
+    }
+
     .skiplink {
-        background-color: $navbar-color;
+        background-color: transparent;
+    }
+
+    .navrow {
+        border-bottom: solid 2px #454545;
+        padding-bottom:20px;
+        margin: 0 20px;
+    }
+
+    h1 {
+        font-family: "liberator", sans-serif;
+        font-size:3.2em;
+        letter-spacing: 0.03em;
+    }
+
+    .links {
+        //lets make those links squish to the right for large screens
+        padding-left: 20%;
     }
 
     ul li {
 
         a {
             text-shadow: none;
-            font-family: $header-font;
-            font-size: 1.4em;
-            font-weight: 900;
-            letter-spacing: 0.05em;
+            font-family: $font-family;
+            font-size: 1.2em;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            color: $dark-grey;
 
             &:hover {
                 text-shadow: 0 1px 1px $dark-grey;
+                background: transparent;
             }
         }
     }

@@ -5,7 +5,7 @@
   min-height: 60px;
   display: block;
   margin-bottom: 20px;
-  background: $navbar-color; // Change this color in settings to change the navbar color
+  background: transparent; // Change this color in settings to change the navbar color
   position: relative;
   @include respond(all-phones) {
     border: none;
@@ -38,10 +38,10 @@
       @include border-radius($button-radius);
       @include font-size($larger);
       &:hover {
-        background: lighten($navbar-color, 5%);
+        //background: lighten($navbar-color, 5%);
       }
       &:active, &.active {
-        background: darken($navbar-color, 5%);
+        //background: darken($navbar-color, 5%);
       }
     }
   }
@@ -343,7 +343,7 @@
 .gumby-no-touch .navbar ul li:hover > a,
 .gumby-touch .navbar ul li.active > a {
   position: relative;
-  background: $info-hover-color;
+  //background: $info-hover-color;
   z-index: 1000;
 }
 
