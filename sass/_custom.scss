@@ -25,6 +25,10 @@ ul li {
     font-family: $font-family;
 }
 
+.center {
+    text-align: center;
+}
+
 #main-menu {
         position:fixed;
         top:0px;
@@ -49,7 +53,7 @@ ul li {
     margin-top: 40px;
 
     @include respond ("max-width:1300px") {
-        width: 70%;
+        //width: 90%;
         margin-top: 20px;
     }
 
@@ -62,15 +66,39 @@ ul li {
     }
 
     .navrow {
-        border-bottom: solid 2px #454545;
+        border-bottom: solid 1px #454545;
         padding-bottom:20px;
         margin: 0 20px;
+
+        @include respond ("max-width:1300px") {
+
+        padding-bottom: 0px;
+        }
     }
+
 
     h1 {
         font-family: "liberator", sans-serif;
         font-size:3.2em;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.06em;
+
+
+        @include respond ("max-width:1300px") {
+            font-size:1.8em;
+        }
+    }
+
+    h3 {
+        color: $dark-grey;
+        padding-left: 1.5%;
+        padding-top: 20px;
+        font-size: 1.5em;
+        font-weight: 500;
+
+        @include respond("max-width:1300px") {
+            font-size: 1.2em;
+
+        }
     }
 
     .links {
@@ -85,8 +113,14 @@ ul li {
             font-family: $font-family;
             font-size: 1.2em;
             font-weight: 400;
-            letter-spacing: 0.01em;
+            letter-spacing: 0.03em;
             color: $dark-grey;
+            padding-top: 15px;
+
+            @include respond("max-width:1300px") {
+                font-size: 1em;
+                padding-top: 0;
+            }
 
             &:hover {
                 text-shadow: 0 1px 1px $dark-grey;
@@ -101,168 +135,44 @@ ul li {
 .modal .content{
     width: 60%;
      @include respond("max-width:1300px"){
-            width: 80%;
-            max-height: 85%;
-            top:10%;
+        width: 80%;
+        max-height: 85%;
+        top:10%;
     }
 
     @include respond(all-phones) {
         overflow-x: hidden;
     }
 }
-.center {
-    text-align: center;
-}
 
 .section1 {
-    margin-top: 60px;
+    margin-top: 100px;
 
-    @include respond ("max-width: 1300px") {
-        margin-top: 0;
-    }
-
-    .left {
-        height: 250px;
-
-        @include respond ("max-width:1300px") {
-            height: 200px;
-        }
-
-        @include respond (all-phones) {
-            height: 60px;
-        }
-
-        .name {
-            padding-top: 60px;
-
-            @include respond(all-phones) {
-                padding-top: 20px;
-                }
-
-            h2 {
-
-                color: #e2e2e2;
-                font-weight: 600;
-                letter-spacing: 0.03em;
-
-                @include respond(all-phones){
-                    font-size: 1.7em;
-                }
-            }
-        }
-    }
-
-    .right {
-        height: 250px;
-        border-left: solid 2px #00cbe9;
-        margin-left: 0;
-
-        @include respond ("max-width:1300px"){
-            height: 200px;
-        }
-
-        @include respond (all-phones){
-            border-left:none;
-            height: 160px;
-        }
-
-        .list {
-            width: 300px;
-            margin: 0 auto;
-            padding-top: 60px;
-
-            @include respond(all-phones) {
-                padding-top: 30px;
-                padding-left: 30px;
-
-            }
-        }
-
-        ul li {
-            margin-top:20px;
-            color: #e2e2e2;
-            font-weight: 400;
-            font-size: 1.2em;
-
-            @include respond ("max-width:1300px"){
-                margin-top: 0;
-            }
-        }
-    }
-
-    .adventure {
-       background: rgba(136, 136, 136, 0.59);
-
-       h1 {
-        font-size: 8em;
-        font-weight: 800;
-        color: #00cbe9;
+    p{
+        color: #e2e2e2;
+        font-size: 1.3em;
         letter-spacing: 0.03em;
-        padding: 10px;
+        font-weight: 300;
+        margin-top: 60%;
+        padding: 0 40px;
+        text-align: center;
 
-        @include respond ("max-width:1300px"){
-            font-size: 6em;
-            }
-
-        @include respond (all-phones){
-            font-size: 2em;
-            }
-       }
-    }
-
-    .description {
-        min-height: 200px;
-
-        p {
-            color: #e2e2e2;
-            line-height: 1.2em;
-            font-size: 1em;
-            margin: 0 auto;
-        }
-
-        .desc-left{
-            padding-top: 40px;
-
-            @include respond(all-phones) {
-                padding-top: 10px;
-                padding-left: 30px;
-            }
-        }
-
-        .desc-right {
-            border-left: solid 2px #00cbe9;
-            margin-left: 0;
-            padding-left: 30px;
-            padding-top: 40px;
-            height: 200px;
-
-            @include respond(all-phones) {
-                padding-top: 10px;
-                padding-left: 30px;
-                height: 0;
-                border-left: none
-            }
+        @include respond("max-width:1300px") {
+            margin-top:35%;
         }
     }
 
-    .slogan-end {
-        border-top: solid 2px #00cbe9;
-        padding-top: 20px;
-
-        @include respond(all-phones) {
-            margin-top: 180px;
-        }
+    .explore {
+        text-align: center;
 
         h2 {
-            background: rgba(136, 136, 136, 0.59);
-            font-size: 2em;
-            font-weight: 600;
-            color: #00cbe9;
-            letter-spacing: 0.03em;
-            padding: 10px;
+            font-family: "liberator", sans-serif;
+            font-size: 3em;
+            color: #e2e2e2;
+            margin-top: 150px;
 
-            @include respond(all-phones) {
-                font-size: 1.5em;
+            @include respond("max-width:1300px") {
+                margin-top: 100px;
             }
         }
     }

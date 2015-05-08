@@ -57,7 +57,11 @@
 				</ul>
 			</div>
 		</div>
-
+		<div class="row">
+			<div class="twelve columns ">
+				<h3>Front End Developer</h3>
+			</div>
+		</div>
 	</div>
 	<!--hidden scroll menu-->
 	<div class="navbar" id="main-menu">
@@ -74,37 +78,13 @@
 	</div>
 	<section class='section1' data-target='home-section'>
 		<div class="row">
-			<div class="six columns left">
-				<div class='name center'><h2>Jackson Dockery</h2></div>
-			</div>
-			<div class="six columns right">
-				<div class='list '>
-					<ul>
-						<li>Front-end Developer</li>
-						<li>Animal Lover</li>
-						<li>Explorer</li>
-					</ul>
-				</div>
+			<div class="six columns centered">
+				<p>Hi, my name is Jackson. I'm a front end developer with a passion for making clean, responsive sites.</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class='twelve columns centered'>
-				<div class="adventure center">
-					<h1>ADVENTURE</h1>
-				</div>
-			</div>
-		</div>
-		<div class="row description text-left">
-			<div class="six columns desc-left">
-				<p>Explorer of life and opportunities, I've sailed the open sea and walked the dusty trail. Now I'm searching for a job that fits. While it remains elusive like the white whale, still I continue the search. Ok all weird literary stuff aside, I am a junior front-end developer searching for a fun and organized environment to continue my career in the development world. Let's talk!</p>
-			</div>
-			<div class="six columns desc-right">
-				<p>Well, we should probably talk about how weird that got, things just kinda got away from me there. But seriously, I like working in fast paced, learning environments where communication is key and projects are well thought out. I work in PHP, javascript, HTML5, CSS, SASS and Python.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="eight columns centered text-center slogan-end">
-				<h2>Wherever you are, You're in one.</h2>
+			<div class="six columns centered explore">
+				<h2>Explore</h2>
 			</div>
 		</div>
 	</section>
@@ -180,7 +160,7 @@
 				<p>336-554-2792</p>
 			</div>
 			<div class="six columns jax">
-				<p>Hi! I'm Jackson. I have a beautiful wife named Sara and three wild dogs. I love to run, scuba dive, ride my bike in the dirt and raise a pint with friends. A healthy work/play balance keeps me sane!</p>
+				<p>I'm Jackson, I have a passion for good work and living life outside if it.</p>
 				<p>I'm a front-end developer with 1.5 years experience in the field. I am an eager learner and dedicated to a career in this field. I excel in a learning and supportive environment, while maintaining deadlines and company goals. I prefer to work in a team environment as I bring enthusiasm and willingness to work, but I can also work remotely and on an individual basis.</p>
 				<div class='contact-info'>
 					<p class="btn "><a href="#" class="switch" gumby-trigger="#modal1">Let's Talk!</a></p>
