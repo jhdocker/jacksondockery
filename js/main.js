@@ -43,14 +43,14 @@ $('.modal').on(Gumby.click, function(e){
 	}
 });
 
-(function($) {
-    $(document).ready(function(){
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 200) {
-                $('#main-menu').fadeIn(500);
-            } else {
-                $('#main-menu').fadeOut(500);
-            }
-        });
-    });
-})(jQuery);
+//(function($) {//scroling menu
+//    $(document).ready(function(){
+//        $(window).scroll(function(){
+//            if ($(this).scrollTop() > 200) {
+//                $('#main-menu').fadeIn(500);
+//            } else {
+//                $('#main-menu').fadeOut(500);
+//            }
+//        });
+//    });
+//})(jQuery);

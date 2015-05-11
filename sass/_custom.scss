@@ -16,7 +16,12 @@ body {
     }
 }
 
-h1, h2, h3, p{
+h1 {
+    font-family: $header-font;
+    font-size: 3.2em;
+}
+
+h2, h3, p{
 
     font-family: $font-family;
 }
@@ -168,6 +173,7 @@ ul li {
         h2 {
             font-family: "liberator", sans-serif;
             font-size: 3em;
+            letter-spacing: 0.06em;
             color: #e2e2e2;
             margin-top: 150px;
 
@@ -178,50 +184,30 @@ ul li {
     }
 }
 
-.section2 {
-    margin-top: 300px;
-
-    @include respond("max-width:1300px"){
-        margin-top: 100px;
-    }
+.section2, .section3 {
+    margin-top: 200px;
 
     h1 {
         font-weight: 600;
-    }
-
-    .project-wrapper {
-        height: 400px;
-    }
-    .project-display {
-        margin-top: 100px;
-
-        .project1{
-            background: url(../img/longstare1.png) no-repeat center;
+        font-size:3.2em;
+        letter-spacing: 0.06em;
+        border-bottom: solid 1.5px #454545;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
         }
 
-        .project2{
-            background: url(../img/longstare2.png) no-repeat center;
-        }
-
-        .project3{
-            background: url(../img/longstare3.png) no-repeat center;
-            margin-top: 20px;
-        }
-
-
-    }
-}
-
-.section3 {
-    margin-top: 100px;
-
-    h1 {
-        font-weight: 600;
+    h3 {
+        letter-spacing: 0.03em;
+        font-size: 1.3em;
+        font-weight: 400;
+        padding-top: 20px;
         margin-bottom: 100px;
     }
 
     .jax-pic {
         text-align: right;
+        padding-right: 50px;
 
         @include respond(all-phones) {
             text-align: center;
@@ -229,7 +215,12 @@ ul li {
     }
 
     .jax {
+        padding-left: 50px;
 
+        p {
+            font-size: 1em;
+            letter-spacing: 0.03em;
+        }
 
         .btn a{
             margin-top: 40px;
@@ -238,7 +229,7 @@ ul li {
             padding: 16px 20px;
             font-family: mohave;
             letter-spacing: 0.06em;
-            font-size: 1.2em;
+            font-size: 1em;
             background-color: #f2f2f2;
             color: #454545;
             border: solid thin #454545;
@@ -263,102 +254,51 @@ ul li {
 
             p{
                 margin-bottom: 0;
+
             }
         }
     }
 }
 
-/* --- Container configuration ---------------------------------------------------------- */
-.viewport {
-    border: 3px solid #eee;
-    //float: left;
-    height: 399px;
-    margin: 20px 9px 9px 0;
-    overflow: hidden;
-    position: relative;
-    width: 450px;
-
-    @include respond(all-phones) {
-        margin: 0 auto;
-        height: 300px;
-        width: 300px;
-        margin-top: 10px;
-    }
-}
-
-.viewport1 {
-    background-image: url(../img/viewport-bg1.png);
-}
-
-.viewport2 {
-    background-image: url(../img/viewport-bg2.png);
-}
-
-.viewport3 {
-    background-image: url(../img/viewport-bg3.png);
-}
-
-.viewport4 {
-    background-image: url(../img/viewport-bg4.png);
-}
-
-/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
-   class to the last thumbnail in each row to get rid of the margin-right. */
-.no-margin {
-    margin-right: 0;
-}
-
-/* --- Link configuration that contains the image and label ----------------------------- */
-.viewport a {
-    display: block;
-    position: relative;
-}
-
-.viewport a img {
-    height: 332px;
-    left: -20px;
-    position: relative;
-    top: -20px;
-    width: 500px;
-}
-
-/* --- Label configuration -------------------------------------------------------------- */
-.viewport a span {
-    display: none;
-    font-size: 3.0em;
-    font-weight: bold;
-    height: 100%;
-    padding-top: 120px;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    z-index: 100;
-}
-    .viewport a span em {
-        display: block;
-        font-size: 0.45em;
-        font-weight: normal;
-        padding-top:20px;
-    }
-
-/* --- Dark hover background ------------------------------------------------------------ */
-.dark-background {
-    background-color: rgba(15, 15, 15, 0.6);
-    color: #fff;
-    text-shadow: #000 0px 0px 20px;
-}
-    .dark-background em {
-        color: #ccc;
-    }
-
-
-.section4 {
+.section3 {
     margin-top: 100px;
+    padding: 100px 0;
+    background-color: #e2e2e2;
 
-    .contact-form {
+    .work {
+        margin-top: 50px;
+
+        h4 {
+            font-weight: 400;
+            border-bottom: solid 2px #ccc;
+            width: 50%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+        
+        ul {
+            margin-top: 20px;
+        }
+
+        p {
+            letter-spacing: 0.03em;
+        }
+    }
+
+    .work-description {
+        margin-top: 100px;
+    }
+}
+
+.section-contact{
+   .contact-form {
         width: 500px;
         margin: 0 auto;
+
+        h1 {
+            font-family: $font-family;
+            font-weight: 600;
+        }
 
         @include respond("max-width:1300px") {
             h1 {
@@ -377,6 +317,11 @@ ul li {
             margin-top:20px;
             width: 400px;
             height: 40px;
+            outline: none;
+            border: solid 1px #ccc;
+            -moz-border-radius:2px;
+            -webkit-border-radius:2px;
+            border-radius:2px;
 
             @include respond(all-phones) {
                 width: 200px;
@@ -387,9 +332,10 @@ ul li {
         textarea {
             margin-top: 20px;
             width: 400px;
-            -moz-border-radius:5px;
-            -webkit-border-radius:5px;
-            border-radius:5px;
+            -moz-border-radius:2px;
+            -webkit-border-radius:2px;
+            border-radius:2px;
+            border: solid 1px #ccc;
             outline: none;
             resize: none;
 
@@ -403,12 +349,13 @@ ul li {
             width: 200px;
             height: 60px;
             padding: 16px 20px;
-            font-family: mohave;
+            //font-family: mohave;
             letter-spacing: 0.06em;
             font-size: 1.2em;
             background-color: #fff;
             color: #454545;
             border: solid thin #454545;
+            cursor: pointer;
 
             &:hover {
                 background: #454545;
@@ -421,6 +368,74 @@ ul li {
             }
         }
     }
+}
+
+.section4 { // portfolio section
+    padding: 100px 0;
+
+     h1 {
+        font-weight: 600;
+        font-size:3.2em;
+        letter-spacing: 0.06em;
+        border-bottom: solid 1.5px #454545;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        }
+
+    h3 {
+        letter-spacing: 0.03em;
+        font-size: 1.3em;
+        font-weight: 400;
+        padding-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    h4 {
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 0.9em;
+        padding-right: 80px;
+    }
+
+    img {
+        width: 300px;
+        border: solid 1px #ccc;
+
+        &:hover {
+            box-shadow: #ccc 2px 2px 2px;
+        }
+    }
+
+    .portfolio {
+        border-bottom: solid 1.5px #ccc;
+        padding: 80px 0;
+
+        .pic-left {
+            img {
+                float: left;
+                margin-right: 60px;
+            }
+        }
+
+        .pic-right {
+
+            .project-text {
+                width: 65%;
+                float: left;
+            }
+        }
+    }
+}
+
+.section5 {
+
+    padding: 40px 0;
+    background: #e2e2e2;
+    text-align: right;
 }
 
 footer  {

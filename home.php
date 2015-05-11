@@ -50,10 +50,10 @@
 					<h1>JACKSON DOCKERY</h1>
 				</div>
 				<ul class="six columns links">
-					<li class='left skiplink'><a href="#" gumby-goto="[data-target='portfolio-section']" gumby-duration="600" gumby-offset="-100">About</a></li>
-					<li class='left skiplink'><a href="#" gumby-goto="[data-target='about-section']" gumby-duration="600" gumby-offset="-100">Work</a></li>
-					<li class='left skiplink'><a href="#" gumby-goto="[data-target='about-section']" gumby-duration="600" gumby-offset="-100">Portfolio</a></li>
-					<li class='left skiplink'><a href="#" class="switch"  gumby-goto="[data-target='contact-section']" gumby-duration="600" >Contact</a></li>
+					<li class='left skiplink'><a href="#" gumby-goto="[data-target='about']" gumby-duration="600" >About</a></li>
+					<li class='left skiplink'><a href="#" gumby-goto="[data-target='work']" gumby-duration="600" >Work</a></li>
+					<li class='left skiplink'><a href="#" gumby-goto="[data-target='portfolio']" gumby-duration="600" >Portfolio</a></li>
+					<li class='left skiplink'><a href="#" class="switch"  gumby-goto="[data-target='about']" gumby-duration="600" >Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -76,10 +76,10 @@
 		</div>
 
 	</div>
-	<section class='section1' data-target='home-section'>
+	<section class='section1'>
 		<div class="row">
 			<div class="six columns centered">
-				<p>Hi, my name is Jackson. I'm a front end developer with a passion for making clean, responsive sites.</p>
+				<p>Hi, my name is Jackson. I'm a front end developer with a passion for making clean, responsive websites.</p>
 			</div>
 		</div>
 		<div class="row">
@@ -88,93 +88,86 @@
 			</div>
 		</div>
 	</section>
-	<section class='section2' data-target='portfolio-section'>
+	<!--start of about section-->
+	<section class='section2' data-target='about' > 
 		<div class="row">
-			<div class="twelve columns text-center">
-				<h1>Projects</h1>
-			</div>
-		</div>
-		<div class="project-display">
-			<div class="row">
-				<div class="six columns">
-					<!--<div class="project-wrapper project1">
-						<img src="img/port1.png">
-					</div>-->
-					<div class="viewport viewport1">
-					    <a target="_blank" href="http://demo.wearepine.com">
-					        <span class="dark-background">Pine <em>Current project. In Progress!<br />These are template pages only (no live data) Built on the Gumby framework.</em></span>
-					        <img src="img/pinepage.png" alt="Pine" />
-					    </a>
-					</div>
-				</div>
-				<div class="six columns">
-					<!--<div class="project-wrapper project2">
-						<img src="img/port2.png">
-					</div>-->
-					<div class="viewport viewport2">
-					    <a target="_blank" href="http://usadvantagesavings.com/standard/007/a05/z1">
-					        <span class="dark-background">usadvantageplans <em>USAP Savings Plus<br />Savings Plus Landing Page<br />Built in Drupal and Gumby</em></span>
-					        <img src="img/savingsplus.png" alt="Pine" />
-					    </a>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="six columns">
-					<!--<div class="project-wrapper project1">
-						<img src="img/port1.png">
-					</div>-->
-					<div class="viewport viewport3">
-					    <a target="_blank" href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/z2">
-					        <span class="dark-background">usadvantageplans<em>USAP Roadside Insurance Landing Page<br />Built in Drupal and Gumby</em></span>
-					        <img src="img/roadsidesmall.png" alt="Pine" />
-					    </a>
-					</div>
-				</div>
-				<div class="six columns">
-					<!--<div class="project-wrapper project2">
-						<img src="img/port2.png">
-					</div>-->
-					<div class="viewport viewport4">
-					    <a target="_blank" href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/r1">
-					        <span class="dark-background">usadvantagesavings <em>Roadside insurance landing page. a/b test<br />Built in Drupal and Gumby</em></span>
-					        <img src="img/savingvan.png" alt="Pine" />
-					    </a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-	<section class='section3' data-target='about-section' >
-		<div class="row">
-			<div class="twelve columns text-center">
-				<h1>Hi, I'm Jackson.</h1>
+			<div class="six columns centered text-center">
+				<h1>About</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="six columns jax-pic">
-				<img src="img/jackson.jpg">
+			<div class="six columns centered text-center">
+				<h3>The Tell All</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="six columns jax-pic"
+>				<img src="img/jackson-8.jpg">
 				<p>jhdocker [at] gmail.com</p>
 				<p>336-554-2792</p>
 			</div>
 			<div class="six columns jax">
-				<p>I'm Jackson, I have a passion for good work and living life outside if it.</p>
-				<p>I'm a front-end developer with 1.5 years experience in the field. I am an eager learner and dedicated to a career in this field. I excel in a learning and supportive environment, while maintaining deadlines and company goals. I prefer to work in a team environment as I bring enthusiasm and willingness to work, but I can also work remotely and on an individual basis.</p>
+				<p>I have a passion for making clean, responsive websites using mobile first methodology. I work with completly custom sites to content management backed sites like Wordpress and Drupal. I enjoy projects with the full scope in mind and work best in a team setting, but I'm capiable of working solo or remotely </p>
+				<p>Currently, I live in Greensboro NC with my super babe of a wife and my three crazy dogs. When I’m not working, you can find me being pulled through my neighborhood by my crazy pups or raising a pint with my wife and friends. I love to make things with my hands, walk through the woods and dive in the ocean.</p>
 				<div class='contact-info'>
 					<p class="btn "><a href="#" class="switch" gumby-trigger="#modal1">Let's Talk!</a></p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class='section4' data-target='contact-section'>
+	<!--start of work section-->
+	<section class='section3' data-target='work'>
 		<div class="row">
-			<div class="twelve columns">
-
+			<div class="six columns centered text-center">
+				<h1>Work</h1>
 			</div>
 		</div>
-
+		<div class="row">
+			<div class="six columns centered text-center">
+				<h3>The Nitty Gritty</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns work text-center">
+				<h4>Front End</h4>
+				<ul>
+					<li>HTML/CSS</li>
+					<li>SASS</li>
+					<li>GUMBY Framework</li>
+					<li>jQuery</li>
+					<li>Wordpress</li>
+					<li>Drupal</li>
+				</ul>
+			</div>
+			<div class="four columns work text-center">
+				<h4>Design</h4>
+				<ul>
+					<li>Illustrator</li>
+					<li>Photoshop</li>
+					<li>Wireframes</li>
+				</ul>
+			</div>
+			<div class="four columns work text-center">
+				<h4>Back End</h4>
+				<ul>
+					<li>PHP</li>
+					<li>Python</li>
+					<li>MySQL</li>
+					<li>Version Control</li>
+					<li>Git</li>
+					<li>Server Deployment</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="six columns centered text-center work-description">
+				<p>I began learning to code and style websites early 2013 in an effort to get out of healthcare. After lots of late nights, I was able to get my first job as a developer later that year.</p>
+				<p>Now, after a year and a half, I am comfortable in responsive design implementation and mobile first methodology. I am able to write in php and python, and have experience in deploying code via git and version control. </p>
+				<p></p>
+			</div>
+		</div>
+	</section>
+	<section class='section-contact'>
 		<div class="row"><!--start of modal-->
 			<div class="twelve columns">
 				<div class="contact-form">
@@ -206,6 +199,65 @@
 			</div>
 		</div>
 	</section>
+	<!--start of portfolio section-->
+	<section class='section4' data-target='portfolio'>
+		<div class="row">
+			<div class="six columns centered text-center">
+				<h1>Portfolio</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="six columns centered text-center">
+				<h3>Just some cool stuff</h3>
+			</div>
+		</div>
+		<div class="row portfolio">
+			<div class="twelve columns pic-left">
+				<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>
+				<div class="project-text">
+					<h4>Pine (2015)</h4>
+					<p>(site in progress)</p>
+					<p>Pine is a pharmacy locator and drug pricing tool. This is a demo site for investors to view pages, live site is still in backend development. Pine is built on the Zend framework using Gumby and Sass for the responsive front end. I have been responsible for creating and implementing responsive page templates for live data and coordinating backend development with contract developers. Site is currently is using placeholder data only. </p>
+				</div>
+			</div>
+		</div>
+		<div class="row portfolio">
+			<div class="twelve columns pic-right">
+				<div class="project-text">
+						<h4>USAP Roadside (2014)</h4>
+						<p>Roadside assistance site built for USAdvantage Plans in partner with Chubb insurance group. Landing page in an A/B test for selling accidental death and dismemberment insurance. Site is built in drupal 7 and styled with Gumby and Sass and fully responsive. My role in this build was to take illustrator design and create page template that is responsive to desktop, laptop, tablets and most phones.</p>
+				</div>
+				<div class='portfolio-pic'><a target='_blank' href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/z2"><img src="img/roadside.jpg"></a></div>
+			</div>
+		</div>
+		<div class="row portfolio">
+			<div class="twelve columns pic-left">
+				<div class='portfolio-pic'><a target='_blank' href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/r1"><img src="img/chubb.jpg"></a></div>
+				<div class="project-text">
+					<h4>Chubb Roadside (2014)</h4>
+					<p>This site was built for Chubb Insurance group and was another A/B roadside insurance test. I was responsible for building this site in Drupal 7 from an Illustrator document. The site uses the Gumby framework and Sass to ensure proper viewing on all divices. This was one of my earylier projects in 2014, and was fun for learning responsive development.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row portfolio">
+			<div class="twelve columns pic-right">
+				<div class="project-text">
+						<h4>USAP Roadside (2014)</h4>
+						<p>Roadside assistance site built for USAdvantage Plans in partner with Chubb insurance group. Landing page in an A/B test for selling accidental death and dismemberment insurance. Site is built in drupal 7 and styled with Gumby and Sass and fully responsive. My role in this build was to take illustrator design and create page template that is responsive to desktop, laptop, tablets and most phones.</p>
+				</div>
+				<div class='portfolio-pic'><a target='_blank' href="http://usadvantagesavings.com/standard/007/a05/z1"><img src="img/usas.jpg"></a></div>
+			</div>
+		</div>
+	</section>
+	<section class='section5' data-target='contact'>
+		<div class="row">
+			<div class="twelve columns">
+				<p>Jackson Dockery</p>
+				<p>jhdocker [at] gmail.com</p>
+				<p>336-554-2792</p>
+			</div>
+		</div>
+	</section>	
 	<footer>
 
 	</footer>
