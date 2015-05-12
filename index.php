@@ -33,7 +33,7 @@
 </head>
 
 <body>
-	<?php //include_once("analyticstracking.php") ?>
+	<?php include_once("analytics.php") ?>
 	
 	<section class='section1'>
 		<!--lets set up that navbar-->
@@ -113,7 +113,7 @@
 				<p>336-554-2792</p>
 			</div>
 			<div class="six columns jax">
-				<p>I have a passion for making clean, responsive websites using mobile first methodology. I work with completly custom sites to content management backed sites like Wordpress and Drupal. I enjoy projects with the full scope in mind and work best in a team setting, but I'm capiable of working solo or remotely </p>
+				<p>Hi! I have a passion for making clean, responsive websites using mobile first methodology. I work with completly custom sites to content management backed sites like Wordpress and Drupal. I enjoy projects with the full scope in mind and work best in a team setting, but I'm capiable of working solo or remotely </p>
 				<p>Currently, I live in Greensboro NC with my super babe of a wife and my three crazy dogs. When I’m not working, you can find me being pulled through my neighborhood by my crazy pups or raising a pint with my wife and friends. I love to make things with my hands, walk through the woods and dive in the ocean.</p>
 				<div class='contact-info'>
 					<p class="btn "><a href="#" class="switch" gumby-trigger="#modal1">Let's Talk!</a></p>
@@ -246,14 +246,15 @@
 				<!--<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>-->
 				<ul class="portfolio-pic">
 				    <li>
-				    	<a target="_blank" href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/z2"><img src="img/roadside.jpg" alt=""></a>
-				    	<div class="caption">
-				    		<div class="blur"></div>
-				        	<div class="caption-text">
-				          		<h1>USAdvantage Plans</h1>
-				          		<p>Insurance A/B Test</p>
-				        	</div>
-				    	</div>
+				    	<a target="_blank" href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/z2"><img src="img/roadside.jpg" alt="">
+					    	<div class="caption">
+					    		<div class="blur"></div>
+					        	<div class="caption-text">
+					          		<h1>USAdvantage Plans</h1>
+					          		<p>Insurance A/B Test</p>
+					        	</div>
+					    	</div>
+					    </a>
 				    </li>
 				</ul>
 			</div>
@@ -268,14 +269,15 @@
 				<!--<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>-->
 				<ul class="portfolio-pic">
 				    <li>
-				    	<a target="_blank" href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/r1"><img src="img/chubb.jpg" alt=""></a>
-				    	<div class="caption">
-				    		<div class="blur"></div>
-				        	<div class="caption-text">
-				          		<h1>Chubb Insurance</h1>
-				          		<p>Insurance Landing Page</p>
-				        	</div>
-				    	</div>
+				    	<a target="_blank" href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/r1"><img src="img/chubb.jpg" alt="">
+					    	<div class="caption">
+					    		<div class="blur"></div>
+					        	<div class="caption-text">
+					          		<h1>Chubb Insurance</h1>
+					          		<p>Insurance Landing Page</p>
+					        	</div>
+					    	</div>
+					    </a>
 				    </li>
 				</ul>
 			</div>
@@ -290,14 +292,15 @@
 				<!--<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>-->
 				<ul class="portfolio-pic">
 				    <li>
-				    	<a target="_blank" href="http://usadvantagesavings.com/standard/007/a05/z1"><img src="img/usas.jpg" alt=""></a>
-				    	<div class="caption">
-				    		<div class="blur"></div>
-				        	<div class="caption-text">
-				          		<h1>UsadvantagePlans</h1>
-				          		<p>Insurance Landing Page</p>
-				        	</div>
-				    	</div>
+				    	<a target="_blank" href="http://usadvantagesavings.com/standard/007/a05/z1"><img src="img/usas.jpg" alt="">
+					    	<div class="caption">
+					    		<div class="blur"></div>
+					        	<div class="caption-text">
+					          		<h1>UsadvantagePlans</h1>
+					          		<p>Insurance Landing Page</p>
+					        	</div>
+					    	</div>
+					    </a>
 				    </li>
 				</ul>
 			</div>
