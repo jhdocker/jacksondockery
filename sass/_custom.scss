@@ -19,6 +19,10 @@ body {
 h1 {
     font-family: $header-font;
     font-size: 3.2em;
+
+    @include respond(all-phones) {
+        font-size: 2.2em;
+    }
 }
 
 h2, h3, p{
@@ -46,13 +50,12 @@ ul li {
             //left: 15%;
         }
 
-        @include respond(all-phones) {
-            display: none !important;
+        @include respond("max-width:767px") {
+            display: block;
         }
     }
 
 .navbar {
-
    // width: 50%;
     margin: 0 auto;
     margin-top: 40px;
@@ -60,6 +63,10 @@ ul li {
     @include respond ("max-width:1300px") {
         //width: 90%;
         margin-top: 20px;
+    }
+
+    @include respond ("max-width:768px") {
+        display: none;
     }
 
     .row {
@@ -127,6 +134,10 @@ ul li {
                 padding-top: 0;
             }
 
+            @include respond("max-width:770px") {
+                color: #e2e2e2;
+            }
+
             &:hover {
                 text-shadow: 0 1px 1px $dark-grey;
                 background: transparent;
@@ -147,6 +158,62 @@ ul li {
 
     @include respond(all-phones) {
         overflow-x: hidden;
+        width: 90%;
+    }
+}
+
+.mobile {
+    display:none;
+
+    .border{
+        border-bottom: solid thin #454545;
+    }
+
+    @include respond("max-width:768px") {
+        display: block;
+
+        h1 {
+            font-size: 1.9em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+}
+
+.heading {
+//section headings
+    h1 {
+        font-weight: 600;
+        font-size:3.2em;
+        letter-spacing: 0.06em;
+        border-bottom: solid 1.5px #454545;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+
+        @include respond(all-phones) {
+            font-size: 2.2em;
+            padding-bottom: 10px;
+        }
+    }
+
+     h3 {
+        letter-spacing: 0.03em;
+        font-size: 1.3em;
+        font-weight: 400;
+        padding-top: 20px;
+        margin-bottom: 100px;
+
+        @include respond("max-width:1300px") {
+            margin-bottom: 40px;
+        }
+
+        @include respond(all-phones) {
+            padding-top: 10px;
+        }
     }
 }
 
@@ -165,6 +232,12 @@ ul li {
         @include respond("max-width:1300px") {
             margin-top:35%;
         }
+
+        @include respond(all-phones) {
+            font-size: 1.2em;
+            font-weight: 400;
+            text-align: left;
+        }
     }
 
     .explore {
@@ -180,6 +253,10 @@ ul li {
             @include respond("max-width:1300px") {
                 margin-top: 100px;
             }
+
+            @include respond(all-phones) {
+                margin-top: 40px;
+            }
         }
     }
 }
@@ -187,23 +264,10 @@ ul li {
 .section2, .section3 {
     margin-top: 200px;
 
-    h1 {
-        font-weight: 600;
-        font-size:3.2em;
-        letter-spacing: 0.06em;
-        border-bottom: solid 1.5px #454545;
-        width: 80%;
-        margin: 0 auto;
-        padding-bottom: 20px;
-        }
-
-    h3 {
-        letter-spacing: 0.03em;
-        font-size: 1.3em;
-        font-weight: 400;
-        padding-top: 20px;
-        margin-bottom: 100px;
+    @include respond(all-phones) {
+        margin-top: 100px;
     }
+
 
     .jax-pic {
         text-align: right;
@@ -211,11 +275,23 @@ ul li {
 
         @include respond(all-phones) {
             text-align: center;
+            padding-right: 0;
+        }
+
+        img {
+
+            @include respond("max-width:1300px") {
+                height: 400px;
+            }
         }
     }
 
     .jax {
         padding-left: 50px;
+
+        @include respond(all-phones) {
+            padding-left: 0;
+        }
 
         p {
             font-size: 1em;
@@ -275,9 +351,13 @@ ul li {
             margin: 0 auto;
             padding-bottom: 20px;
         }
-        
+
         ul {
             margin-top: 20px;
+
+            @include respond(all-phones) {
+                text-align: center;
+            }
         }
 
         p {
@@ -324,7 +404,7 @@ ul li {
             border-radius:2px;
 
             @include respond(all-phones) {
-                width: 200px;
+                width: 250px;
                 display: inherit;
             }
         }
@@ -340,7 +420,7 @@ ul li {
             resize: none;
 
             @include respond(all-phones) {
-                width: 200px;
+                width: 250px;
                 display: inherit;
             }
         }
@@ -356,6 +436,10 @@ ul li {
             color: #454545;
             border: solid thin #454545;
             cursor: pointer;
+
+            @include respond(all-phones) {
+                width: 250px;
+            }
 
             &:hover {
                 background: #454545;
@@ -373,32 +457,30 @@ ul li {
 .section4 { // portfolio section
     padding: 100px 0;
 
-     h1 {
-        font-weight: 600;
-        font-size:3.2em;
-        letter-spacing: 0.06em;
-        border-bottom: solid 1.5px #454545;
-        width: 80%;
-        margin: 0 auto;
-        padding-bottom: 20px;
-        }
-
-    h3 {
-        letter-spacing: 0.03em;
-        font-size: 1.3em;
-        font-weight: 400;
-        padding-top: 20px;
-        margin-bottom: 100px;
+    @include respond("max-width:1300px") {
+        padding: 40px 0;
     }
+
+
 
     h4 {
         font-weight: 600;
         margin-bottom: 40px;
+
+        @include respond(all-phones) {
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
     }
 
     p {
         font-size: 0.9em;
         padding-right: 80px;
+
+        @include respond(all-phones) {
+            padding-right: 0;
+            padding: 10px
+        }
     }
 
     img {
@@ -414,10 +496,22 @@ ul li {
         border-bottom: solid 1.5px #ccc;
         padding: 80px 0;
 
+        .portfolio-pic {
+
+            @include respond(all-phones) {
+                text-align: center;
+            }
+        }
+
         .pic-left {
             img {
                 float: left;
                 margin-right: 60px;
+
+                @include respond(all-phones) {
+                    margin-right: 0;
+                    float: none;
+                }
             }
         }
 
@@ -426,6 +520,11 @@ ul li {
             .project-text {
                 width: 65%;
                 float: left;
+
+                @include respond(all-phones) {
+                    width: 100%;
+                    float: none;
+                }
             }
         }
     }

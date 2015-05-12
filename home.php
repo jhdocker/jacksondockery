@@ -1,16 +1,9 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 
-	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
-			 More info: h5bp.com/b/378 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>Jackson Dockery</title>
@@ -66,17 +59,29 @@
 	<!--hidden scroll menu-->
 	<div class="navbar" id="main-menu">
 		<div class="row" >
-			<a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><img src="img/menu.png"></a>
+			<a class="toggle" gumby-trigger="#main-menu > .row > ul" href="#"><img src="img/menu2.png"></a>
 			<ul class="ten columns centered">
-				<li class='skiplink'><a href="#" gumby-goto="[data-target='home-section']" gumby-duration="600">Home</a></li>
-				<li class='left skiplink'><a href="#" gumby-goto="[data-target='portfolio-section']" gumby-duration="600" gumby-offset="-100">Portfolio</a></li>
-				<li class='left skiplink'><a href="#" gumby-goto="[data-target='about-section']" gumby-duration="600" gumby-offset="-100">About Me</a></li>
-				<li class='left skiplink'><a href="#" class="switch"  gumby-goto="[data-target='contact-section']" gumby-duration="600">Contact</a></li>
+				<li class='left skiplink'><a href="#" gumby-goto="[data-target='about']" gumby-duration="600" >About</a></li>
+					<li class='left skiplink'><a href="#" gumby-goto="[data-target='work']" gumby-duration="600" >Work</a></li>
+					<li class='left skiplink'><a href="#" gumby-goto="[data-target='portfolio']" gumby-duration="600" >Portfolio</a></li>
+					<li class='left skiplink'><a href="#" class="switch"  gumby-goto="[data-target='about']" gumby-duration="600" >Contact</a></li>
 			</ul>
 		</div>
 
 	</div>
 	<section class='section1'>
+		<div class="mobile"><!--hidden-->
+			<div class="row">
+				<div class="twelve columns border text-center">
+					<h1>Jackson Dockery</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns text-center">
+					<h3>Front End Developer</h3>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="six columns centered">
 				<p>Hi, my name is Jackson. I'm a front end developer with a passion for making clean, responsive websites.</p>
@@ -89,14 +94,14 @@
 		</div>
 	</section>
 	<!--start of about section-->
-	<section class='section2' data-target='about' > 
+	<section class='section2' data-target='about' >
 		<div class="row">
-			<div class="six columns centered text-center">
+			<div class="six columns centered heading text-center">
 				<h1>About</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="six columns centered text-center">
+			<div class="six columns centered heading text-center">
 				<h3>The Tell All</h3>
 			</div>
 		</div>
@@ -118,12 +123,12 @@
 	<!--start of work section-->
 	<section class='section3' data-target='work'>
 		<div class="row">
-			<div class="six columns centered text-center">
+			<div class="six columns centered heading text-center">
 				<h1>Work</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="six columns centered text-center">
+			<div class="six columns centered heading text-center">
 				<h3>The Nitty Gritty</h3>
 			</div>
 		</div>
@@ -160,7 +165,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="six columns centered text-center work-description">
+			<div class="six columns centered work-description">
 				<p>I began learning to code and style websites early 2013 in an effort to get out of healthcare. After lots of late nights, I was able to get my first job as a developer later that year.</p>
 				<p>Now, after a year and a half, I am comfortable in responsive design implementation and mobile first methodology. I am able to write in php and python, and have experience in deploying code via git and version control. </p>
 				<p></p>
@@ -202,12 +207,12 @@
 	<!--start of portfolio section-->
 	<section class='section4' data-target='portfolio'>
 		<div class="row">
-			<div class="six columns centered text-center">
+			<div class="six columns centered heading text-center">
 				<h1>Portfolio</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="six columns centered text-center">
+			<div class="six columns centered heading text-center">
 				<h3>Just some cool stuff</h3>
 			</div>
 		</div>
@@ -257,7 +262,7 @@
 				<p>336-554-2792</p>
 			</div>
 		</div>
-	</section>	
+	</section>
 	<footer>
 
 	</footer>
