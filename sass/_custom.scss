@@ -1,19 +1,9 @@
 // Your custom SCSS should be written here...
 body {
-    background-image: url(../img/ocean-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     width:100%;
     //background-position: center top;
     background-color: #f2f2f2;
-
-    @include respond("max-width: 1300px") {
-        //background-image: url(../img/bg-slant-med.png);
-    }
-    @include respond("max-width:390px") {
-        //background-image: url(../img/bg-slant-sm.png);
-        overflow-x: hidden;
-    }
 }
 
 h1 {
@@ -58,12 +48,7 @@ ul li {
 .navbar {
    // width: 50%;
     margin: 0 auto;
-    margin-top: 40px;
-
-    @include respond ("max-width:1300px") {
-        //width: 90%;
-        margin-top: 20px;
-    }
+    //margin-top: 40px;
 
     @include respond ("max-width:768px") {
         display: none;
@@ -218,19 +203,31 @@ ul li {
 }
 
 .section1 {
-    margin-top: 100px;
+    margin-top: -1px;
+    height: 100%;
+    background-image: url(../img/ocean-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include respond(all-phones) {
+        background-position: center;
+    }
 
     p{
         color: #e2e2e2;
         font-size: 1.3em;
         letter-spacing: 0.03em;
         font-weight: 300;
-        margin-top: 60%;
+        margin-top: 70%;
         padding: 0 40px;
         text-align: center;
 
         @include respond("max-width:1300px") {
-            margin-top:35%;
+            margin-top:50%;
+        }
+
+        @include respond(tablets) {
+            margin-top: 60%;
         }
 
         @include respond(all-phones) {
@@ -243,12 +240,14 @@ ul li {
     .explore {
         text-align: center;
 
+
         h2 {
             font-family: "liberator", sans-serif;
             font-size: 3em;
             letter-spacing: 0.06em;
             color: #e2e2e2;
             margin-top: 150px;
+            margin-bottom: 40px;
 
             @include respond("max-width:1300px") {
                 margin-top: 100px;
@@ -484,13 +483,94 @@ ul li {
     }
 
     img {
-        width: 300px;
+        width: 350px;
+        height: 350px;
         border: solid 1px #ccc;
 
-        &:hover {
-            box-shadow: #ccc 2px 2px 2px;
-        }
+       @include respond(all-phones) {
+        width: 300px;
+        height: 350px;
+       }
     }
+
+    .portfolio-pic {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+
+        li{
+            //float: left;
+            padding: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        li:hover .caption{
+            opacity: 1;
+        }
+
+        img{
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            z-index: 4;
+        }
+
+        .caption{
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition:all 0.45s ease-in-out;
+            -moz-transition:all 0.45s ease-in-out;
+            -o-transition:all 0.45s ease-in-out;
+            -ms-transition:all 0.45s ease-in-out;
+            transition:all 0.45s ease-in-out;
+        }
+
+        .blur{
+            background-color: rgba(0,0,0,0.65);
+            height: 100px;
+            width: 350px;
+            margin-top: 250px;
+            z-index: 5;
+            position: absolute;
+
+            @include respond(all-phones) {
+                width: 300px;
+                
+               }
+        }
+
+        .caption-text {
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            top:250px;
+
+            @include respond(all-phones) {
+                top: 200px;
+               }
+
+            h1{
+                text-transform: uppercase;
+                color:#fff;
+                font-size: 24px;
+                text-align: left;
+                padding-left: 20px;
+            }
+
+            p{
+                color: #fff;
+                text-align: left;
+                padding-left: 20px;
+            }
+        } 
+    }
+
+    
 
     .portfolio {
         border-bottom: solid 1.5px #ccc;
@@ -505,8 +585,8 @@ ul li {
 
         .pic-left {
             img {
-                float: left;
-                margin-right: 60px;
+                //float: left;
+                //margin-right: 60px;
 
                 @include respond(all-phones) {
                     margin-right: 0;
@@ -517,9 +597,12 @@ ul li {
 
         .pic-right {
 
+            img{
+                //float: right;
+            }
             .project-text {
-                width: 65%;
-                float: left;
+                //width: 65%;
+                //float: left;
 
                 @include respond(all-phones) {
                     width: 100%;

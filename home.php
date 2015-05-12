@@ -34,7 +34,9 @@
 
 <body>
 	<?php //include_once("analyticstracking.php") ?>
-	<!--lets set up that navbar-->
+	
+	<section class='section1'>
+		<!--lets set up that navbar-->
 	<div class="navbar" id="nav1">
 		<div class="row" >
 			<a class="toggle" gumby-trigger="#nav1 > .row > ul" href="#"><img src="img/menu.png"></a>
@@ -69,7 +71,6 @@
 		</div>
 
 	</div>
-	<section class='section1'>
 		<div class="mobile"><!--hidden-->
 			<div class="row">
 				<div class="twelve columns border text-center">
@@ -217,42 +218,101 @@
 			</div>
 		</div>
 		<div class="row portfolio">
-			<div class="twelve columns pic-left">
-				<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>
-				<div class="project-text">
-					<h4>Pine (2015)</h4>
-					<p>(site in progress)</p>
-					<p>Pine is a pharmacy locator and drug pricing tool. This is a demo site for investors to view pages, live site is still in backend development. Pine is built on the Zend framework using Gumby and Sass for the responsive front end. I have been responsible for creating and implementing responsive page templates for live data and coordinating backend development with contract developers. Site is currently is using placeholder data only. </p>
-				</div>
+			<div class="six columns">
+				<!--<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>-->
+				<ul class="portfolio-pic">
+				    <li>
+				    	<a target="_blank" href="http://demo.wearepine.com"><img src="img/pine.jpg" alt="">
+				    	<div class="caption">
+				    		<div class="blur"></div>
+				        	<div class="caption-text">
+				          		<h1>Pine</h1>
+				          		<p>Super cool drug price site.</p>
+				        	</div>
+				    	</div>
+				    	</a>
+				    </li>
+				</ul>
+			</div>
+			<div class="six columns project-text">
+				<h4>Pine (2015)</h4>
+				<p>(site in progress)</p>
+				<p>Pine is a pharmacy locator and drug pricing tool. This is a demo site for investors to view pages, live site is still in backend development. Pine is built on the Zend framework using Gumby and Sass for the responsive front end. I have been responsible for creating and implementing responsive page templates for live data and coordinating backend development with contract developers. Site is currently is using placeholder data only. </p>
 			</div>
 		</div>
+
 		<div class="row portfolio">
-			<div class="twelve columns pic-right">
-				<div class="project-text">
-						<h4>USAP Roadside (2014)</h4>
-						<p>Roadside assistance site built for USAdvantage Plans in partner with Chubb insurance group. Landing page in an A/B test for selling accidental death and dismemberment insurance. Site is built in drupal 7 and styled with Gumby and Sass and fully responsive. My role in this build was to take illustrator design and create page template that is responsive to desktop, laptop, tablets and most phones.</p>
-				</div>
-				<div class='portfolio-pic'><a target='_blank' href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/z2"><img src="img/roadside.jpg"></a></div>
+			<div class="six columns">
+				<!--<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>-->
+				<ul class="portfolio-pic">
+				    <li>
+				    	<a target="_blank" href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/z2"><img src="img/roadside.jpg" alt=""></a>
+				    	<div class="caption">
+				    		<div class="blur"></div>
+				        	<div class="caption-text">
+				          		<h1>USAdvantage Plans</h1>
+				          		<p>Insurance A/B Test</p>
+				        	</div>
+				    	</div>
+				    </li>
+				</ul>
+			</div>
+			<div class="six columns project-text">
+				<h4>USAP Roadside (2014)</h4>
+				<p>Roadside assistance site built for USAdvantage Plans in partner with Chubb insurance group. Landing page in an A/B test for selling accidental death and dismemberment insurance. Site is built in drupal 7 and styled with Gumby and Sass and fully responsive. My role in this build was to take illustrator design and create page template that is responsive to desktop, laptop, tablets and most phones.</p>
 			</div>
 		</div>
+
 		<div class="row portfolio">
-			<div class="twelve columns pic-left">
-				<div class='portfolio-pic'><a target='_blank' href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/r1"><img src="img/chubb.jpg"></a></div>
-				<div class="project-text">
-					<h4>Chubb Roadside (2014)</h4>
-					<p>This site was built for Chubb Insurance group and was another A/B roadside insurance test. I was responsible for building this site in Drupal 7 from an Illustrator document. The site uses the Gumby framework and Sass to ensure proper viewing on all divices. This was one of my earylier projects in 2014, and was fun for learning responsive development.</p>
-				</div>
+			<div class="six columns">
+				<!--<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>-->
+				<ul class="portfolio-pic">
+				    <li>
+				    	<a target="_blank" href="http://usadvantagesavings.com/roadside/partner/1/53/0300/ppc/a/04/r1"><img src="img/chubb.jpg" alt=""></a>
+				    	<div class="caption">
+				    		<div class="blur"></div>
+				        	<div class="caption-text">
+				          		<h1>Chubb Insurance</h1>
+				          		<p>Insurance Landing Page</p>
+				        	</div>
+				    	</div>
+				    </li>
+				</ul>
+			</div>
+			<div class="six columns project-text">
+				<h4>Chubb Roadside (2014)</h4>
+				<p>This site was built for Chubb Insurance group and was another A/B roadside insurance test. I was responsible for building this site in Drupal 7 from an Illustrator document. The site uses the Gumby framework and Sass to ensure proper viewing on all divices. This was one of my earylier projects in 2014, and was fun for learning responsive development.</p>
 			</div>
 		</div>
+
 		<div class="row portfolio">
-			<div class="twelve columns pic-right">
-				<div class="project-text">
-						<h4>USAP Roadside (2014)</h4>
-						<p>Roadside assistance site built for USAdvantage Plans in partner with Chubb insurance group. Landing page in an A/B test for selling accidental death and dismemberment insurance. Site is built in drupal 7 and styled with Gumby and Sass and fully responsive. My role in this build was to take illustrator design and create page template that is responsive to desktop, laptop, tablets and most phones.</p>
-				</div>
-				<div class='portfolio-pic'><a target='_blank' href="http://usadvantagesavings.com/standard/007/a05/z1"><img src="img/usas.jpg"></a></div>
+			<div class="six columns">
+				<!--<div class='portfolio-pic'><a target='_blank' href="http://demo.wearepine.com"><img src="img/pine.jpg"></a></div>-->
+				<ul class="portfolio-pic">
+				    <li>
+				    	<a target="_blank" href="http://usadvantagesavings.com/standard/007/a05/z1"><img src="img/usas.jpg" alt=""></a>
+				    	<div class="caption">
+				    		<div class="blur"></div>
+				        	<div class="caption-text">
+				          		<h1>UsadvantagePlans</h1>
+				          		<p>Insurance Landing Page</p>
+				        	</div>
+				    	</div>
+				    </li>
+				</ul>
+			</div>
+			<div class="six columns project-text">
+				<h4>Usadvantageplans (2014)</h4>
+				<p>This site was built for USAdvantageplans as a landing page to sell one of many products. In this case it was roadside insurance and was another A/B test. I was responsible for building this site in Drupal 7 from an Illustrator design. The site uses the Gumby framework and Sass to ensure proper viewing on all divices. Enrolment portal is also built in Drupal 7. I was responsible for integrating plan details and building enrollment form on enrollment site.</p>
 			</div>
 		</div>
+
+
+
+
+
+
+		
 	</section>
 	<section class='section5' data-target='contact'>
 		<div class="row">
