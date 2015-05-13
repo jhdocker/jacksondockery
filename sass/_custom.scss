@@ -1,6 +1,6 @@
 // Your custom SCSS should be written here...
 body {
-    
+
     width:100%;
     //background-position: center top;
     background-color: #f2f2f2;
@@ -208,6 +208,10 @@ ul li {
     background-image: url(../img/ocean-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include respond("max-width:1300px") {
+        padding-top: 20px;
+    }
 
     @include respond(all-phones) {
         background-position: center;
@@ -537,7 +541,7 @@ ul li {
 
             @include respond(all-phones) {
                 width: 300px;
-                
+
                }
         }
 
@@ -567,10 +571,10 @@ ul li {
                 text-align: left;
                 padding-left: 20px;
             }
-        } 
+        }
     }
 
-    
+
 
     .portfolio {
         border-bottom: solid 1.5px #ccc;
@@ -618,6 +622,10 @@ ul li {
     padding: 40px 0;
     background: #e2e2e2;
     text-align: right;
+
+    .contact-info .btn a{
+        color: #454545;
+    }
 }
 
 footer  {

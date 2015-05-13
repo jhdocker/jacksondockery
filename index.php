@@ -29,12 +29,13 @@
 
 	<link rel="stylesheet" href="css/gumby.css">
 	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+	<script src="js/main.js"></script>
 
 </head>
 
 <body>
 	<?php include_once("analytics.php") ?>
-	
+
 	<section class='section1'>
 		<!--lets set up that navbar-->
 	<div class="navbar" id="nav1">
@@ -108,7 +109,7 @@
 		</div>
 		<div class="row">
 			<div class="six columns jax-pic"
->				<img src="img/jackson-8.jpg">
+>				<img id='jaxpic' src="img/jackson-8.jpg">
 				<p>jhdocker [at] gmail.com</p>
 				<p>336-554-2792</p>
 			</div>
@@ -310,20 +311,16 @@
 			</div>
 		</div>
 
-
-
-
-
-
-		
 	</section>
 	<section class='section5' data-target='contact'>
 		<div class="row">
 			<div class="twelve columns">
-				<p>Jackson Dockery</p>
+				<p>Jack son Dockery</p>
 				<p>jhdocker [at] gmail.com</p>
 				<p>336-554-2792</p>
+
 			</div>
+
 		</div>
 	</section>
 	<footer>
@@ -347,6 +344,8 @@
 	  document.write('<script src="js/libs/jquery-1.10.1.min.js"><\/script>');
 	}
 	}
+
+
 	</script>
 
 	<!--
@@ -369,7 +368,7 @@
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow89.js"></script>
+	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow89.js"></script>
 
 
   </body>
